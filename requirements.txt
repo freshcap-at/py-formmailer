@@ -1,0 +1,6 @@
+fastapi[standard]
+fastapi-mail
+altcha
+uvicorn
+dotenv
+python-multipart

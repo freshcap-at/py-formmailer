@@ -1,0 +1,5 @@
+- dockerfile - storage as mount
+- create freshcap-client as default
+- read json file each 5 minutes again (background worker)
+- smpt settings through ENV
+- host altcha.js

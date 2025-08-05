@@ -1,0 +1,25 @@
+<!DOCTYPE PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{ subject }}</title>
+  </head>
+  <body style="background-color:#f3f4f6;border:0;padding:0;margin:0;font-family:'Lexend Variable',sans-serif,system-ui;">
+    <div style="padding:20px;">
+        <div style="padding-top:20px;">
+            <div style="font-size:22px;">Hallo,</div>
+            <div style="font-size:16px;padding-top:10px;padding-bottom:10px;">Dir wurde eine neue Nachricht über <span style="font-weight:bold">{{ name }}</span> geschickt!</div>
+            
+            <table style="border:1px solid #E4E4E7;border-collapse:collapse;vertical-align:center;padding-top:15px;">
+                {% for key, value in values.items() %}
+                <tr>
+                    <td style="font-weight: bold;padding:5px;border: 1px solid;">{{ key }}</td>
+                    <td style="padding:5px;border: 1px solid;">{{ value }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+  </body>
+</html>
